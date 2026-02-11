@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BYTEBOND • Syllabus</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <canvas id="bg"></canvas>
+  <header class="header">
+    <div class="brand">
+      <div class="logo3d"></div>
+      <div>
+        <div class="brandName">BYTEBOND</div>
+        <div class="tag">BCA Learning • Sem 1–5</div>
+      </div>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="syllabus.html">Syllabus</a>
+      <a href="semesters.html">Semesters</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menuBtn" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <div class="container">
+    <h1 class="h1">Syllabus</h1>
+    <p class="p">
+      This syllabus includes Sem 1–5 papers and units. (From your uploaded PDF.)
+    </p>
+
+    <div class="row">
+      <a class="btn" href="syllabus.pdf" download style="text-decoration:none">Download PDF</a>
+      <a class="btn" href="semesters.html" style="text-decoration:none">Go to Semesters</a>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="panel" style="padding:0; overflow:hidden">
+      <embed src="syllabus.pdf" type="application/pdf" width="100%" height="700px" />
+    </div>
+
+    <div class="footer">BYTEBOND • Syllabus Viewer</div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script type="module" src="three-bg.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BYTEBOND</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <canvas id="bg"></canvas>
+  <header class="header">
+    <div class="brand">
+      <div class="logo3d"></div>
+      <div>
+        <div class="brandName">BYTEBOND</div>
+        <div class="tag">BCA Learning • Sem 1–5</div>
+      </div>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="syllabus.html">Syllabus</a>
+      <a href="semesters.html">Semesters</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menuBtn" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <div class="container">
+    <div class="hero">
+      <h1 class="h1">Learn BCA the smart way.</h1>
+      <p class="p">
+        BYTEBOND is your semester-wise learning hub: syllabus, papers, units, examples, quizzes, and progress tracking.
+      </p>
+
+      <div class="row">
+        <div style="flex:1; min-width:240px">
+          <input id="searchInput" placeholder="Search subject/unit (e.g., C Programming, DBMS, OS, Network)..." />
+        </div>
+        <button class="btn" id="searchBtn" type="button">Search</button>
+        <a class="btn" href="semesters.html" style="text-decoration:none; display:inline-flex;align-items:center">Browse Semesters</a>
+      </div>
+
+      <div id="searchResults" style="margin-top:12px"></div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="grid">
+      <a class="card3d" href="syllabus.html"><h3>📘 Syllabus PDF</h3><p>Open / download syllabus</p></a>
+      <a class="card3d" href="semesters.html"><h3>🧭 Semester Roadmap</h3><p>Sem 1 → Sem 5 subjects</p></a>
+      <a class="card3d" href="quiz.html"><h3>🧠 Practice Quiz</h3><p>MCQ + score</p></a>
+      <a class="card3d" href="resources.html"><h3>📎 Resources</h3><p>Books, PDFs, papers</p></a>
+    </div>
+
+    <div class="footer">© BYTEBOND • Built for BCA learners</div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script type="module" src="three-bg.js"></script>
+</body>
+</html>
