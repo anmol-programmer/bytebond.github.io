@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BYTEBOND • Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <canvas id="bg"></canvas>
+  <header class="header">
+    <div class="brand">
+      <div class="logo3d"></div>
+      <div>
+        <div class="brandName">BYTEBOND</div>
+        <div class="tag">BCA Learning • Sem 1–5</div>
+      </div>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="syllabus.html">Syllabus</a>
+      <a href="semesters.html">Semesters</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menuBtn" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <div class="container">
+    <h1 class="h1">Contact</h1>
+    <p class="p">Frontend demo form. Later you can connect backend (PHP/Node/Firebase).</p>
+
+    <div class="panel">
+      <div class="row">
+        <div style="flex:1; min-width:240px">
+          <div class="small">Name</div>
+          <input placeholder="Your name" />
+        </div>
+        <div style="flex:1; min-width:240px">
+          <div class="small">Email</div>
+          <input placeholder="your@email.com" />
+        </div>
+      </div>
+
+      <div style="margin-top:12px">
+        <div class="small">Message</div>
+        <textarea placeholder="Write your message..."></textarea>
+      </div>
+
+      <button class="btn" style="margin-top:12px" type="button"
+        onclick="alert('Message submitted (demo)!')">Send</button>
+    </div>
+
+    <div class="footer">BYTEBOND • Contact</div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script type="module" src="three-bg.js"></script>
+</body>
+</html>
